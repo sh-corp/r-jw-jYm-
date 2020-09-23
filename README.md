@@ -44,7 +44,7 @@ jo mere du ødelægger planeten jo hårdere bliver det for dig og de væsner der
 i dette spil skal du prøve at tage nogle gode beslutninger som kan have en god indflydelse på dit liv.
 
 
-####historien af vores spil: '
+#### historien af vores spil: '
 planeten sovs er en af de mest fredfyldte planeter i andromeda galaxen, alle dyrene lever i fred og harmoni, men en dag kommer der nogle væsner der er mere inteligente end mennesker
 for at eropra vort planet, din art hedder (numsen) og det er din pligt at skulle beskytte dem og de dyr der bor på planeten, men dyrene er bare vilde dyr, så du ville sikkert komme
 til at blive slået ihjel af de fleste.
