@@ -1,0 +1,76 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NPC_Movement : MonoBehaviour{
+
+    public bool collide = false;
+    float front_direction = 4;
+    float back_direction = 8;
+    float speed = 1;
+
+
+void start(){
+
+}
+
+  if(OnCollisionEnter2D){
+    collide = true;
+  }
+  else{
+    collide = false;
+  }
+
+}
+  void FixedUpdate(){
+    if(collide == false){
+      Instantiate(front_direction[Random.Range(0, front_direction.length)])
+      if(front_direction = 1){
+        position.y = prosition.y +speed;
+      }
+      if(front_direction = 2){
+        position.y = prosition.y +speed;
+      }
+      if(front_direction = 3){
+        position.x = prosition.x -speed;
+        position.y = prosition.y +speed
+
+      }
+      if(front_direction = 4){
+        position.x = prosition.x +speed;
+        position.y = prosition.y +speed
+      }
+    }
+    if(collide == true){
+      Instantiate(back_direction[Random.Range(0, back_direction.length)])
+      if(front_direction = 1){
+        position.y = prosition.y -speed;
+      }
+      if(front_direction = 2){
+        position.y = prosition.y -speed;
+      }
+      if(front_direction = 3){
+        position.y = prosition.y -speed;
+      }
+      if(front_direction = 4){
+        position.y = prosition.y -speed;
+      }
+      if(front_direction = 5){
+        position.x = prosition.x -speed;
+      }
+      if(front_direction = 6){
+        position.x = prosition.x -speed;
+        position.y = prosition.y -speed
+      }
+      if(front_direction = 7){
+          position.x = prosition.x +speed;
+      }
+      if(front_direction = 8){
+        position.x = prosition.x +speed;
+        position.y = prosition.y -speed
+      }
+    }
+
+  }
+
+}
