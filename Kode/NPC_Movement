@@ -17,17 +17,17 @@ public class NPC_Movement : MonoBehaviour
 void Fixedupdate(){
     int t = (int)Random.Range(0,4);
     if(t == 0){
-      transform.translate(new Vector2(0,speed), space.Self);
+      transform.Translate(new Vector2(0,speed), Space.Self);
     }
     if(t == 1){
-      transform.translate(new Vector2(0,speed), space.Self);
+      transform.Translate(new Vector2(0,speed), Space.Self);
     }
     if(t == 2){
-      transform.translate(new Vector2(-speed,speed), space.Self);
+      transform.Translate(new Vector2(-speed,speed), Space.Self);
 
     }
     if(t == 3){
-      transform.translate(new Vector2(speed,speed), space.Self);
+      transform.Translate(new Vector2(speed,speed), Space.Self);
     }
 
 }
@@ -36,30 +36,30 @@ void Fixedupdate(){
     if (coll.collider == true){
       int t = (int)Random.Range(0,8);
       if(t == 0){
-        transform.translate(new Vector2(0,-speed),space.Self);
+        transform.Translate(new Vector2(0,-speed),Space.Self);
       }
       if(t == 1){
-        transform.translate(new Vector2(0,-speed),space.Self);
+        transform.Translate(new Vector2(0,-speed),Space.Self);
       }
       if(t == 2){
-        transform.translate(new Vector2(0,-speed),space.Self);
+        transform.Translate(new Vector2(0,-speed),Space.Self);
       }
       if(t == 3){
-        transform.translate(new Vector2(0,-speed),space.Self);
+        transform.Translate(new Vector2(0,-speed),Space.Self);
       }
       if(t == 4){
-        transform.translate(new Vector2(-speed,0),space.Self);
+        transform.Translate(new Vector2(-speed,0),Space.Self);
         transform.Rotate(90,0,0,Space.Self);
       }
       if(t == 5){
-        transform.translate(new Vector2(-speed,-speed),space.Self);
+        transform.Translate(new Vector2(-speed,-speed),Space.Self);
       }
       if(t == 6){
-          transform.translate(new Vector2(speed,0),space.Self);
+          transform.Translate(new Vector2(speed,0),Space.Self);
           transform.Rotate(-90,0,0,Space.Self);
       }
       if(t == 7){
-        transform.translate(new Vector2(speed,-speed),space.Self);
+        transform.Translate(new Vector2(speed,-speed),Space.Self);
       }
     }
     }
