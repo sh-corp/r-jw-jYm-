@@ -1,86 +1,73 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_Movement : MonoBehaviour
-{
+public class NPC_Movement : MonoBehaviour{
 
     bool collide = false;
-    float front_direction = 4;
-    float back_direction = 8;
     float speed = 1;
-    string["front_direction1"]
+    string[] a = {
+      0, 1, 2, 3
+    }
+    string[] b = {
+      0, 1, 2, 3, 4, 5, 6, 7
+    }
 
+void start(){
 
-    void start()
-    {
+}
+void Fixedupdate(){
+  if(collide = false){
+    Instantiate(a[Random.Range(0, 3)]);
+    if(front_direction = 1){
+      transform.position = Vector2(0,speed,0);
+    }
+    if(front_direction = 2){
+      transform.position = Vector2(0,speed,0);
+    }
+    if(front_direction = 3){
+      transform.position = Vector2(-speed,0,0);
+      transform.position = Vector2(0,speed,0);
 
     }
-    void Fixedupdate()
-    {
-        if (collide == false)
-        {
-            Instantiate(front_direction[Random.Range(0, 3)]);
-            if (front_direction = 0)
-            {
-                transform.position = Vector2(0, speed, 0);
-            }
-            if (front_direction = 1)
-            {
-                transform.position = Vector2(0, speed, 0);
-            }
-            if (front_direction = 2)
-            {
-                transform.position = Vector2(-speed, 0, 0);
-                transform.position = Vector2(0, speed, 0);
-
-            }
-            if (front_direction = 3)
-            {
-                transform.position = Vector2(speed, 0, 0);
-                transform.position = Vector2(0, speed, 0);
-            }
-
-        }
+    if(front_direction = 4){
+      transform.position = Vector2(speed,0,0);
+      transform.position = Vector2(0,speed,0);
     }
-    void OnCollisionEnter2D()
-    {
-        collide = true;
-        Instantiate(back_direction[Random.Range(0, back_direction.length)]);
-        if (front_direction = 1)
-        {
-            transform.position = Vector2(0, -speed, 0);
-        }
-        if (front_direction = 2)
-        {
-            transform.position = Vector2(0, -speed, 0);
-        }
-        if (front_direction = 3)
-        {
-            transform.position = Vector2(0, -speed, 0);
-        }
-        if (front_direction = 4)
-        {
-            transform.position = Vector2(0, -speed, 0);
-        }
-        if (front_direction = 5)
-        {
-            transform.position = Vector2(-speed, 0, 0);
-            transform.rotate(90, 0, 0, Space.Self);
-        }
-        if (front_direction = 6)
-        {
-            transform.position = Vector2(-speed, 0, 0);
-            transform.position.y = transform.prosition.y - speed;
-        }
-        if (front_direction = 7)
-        {
-            transform.position = Vector2(speed, 0, 0);
-            transform.rotate(-90, 0, 0, Space.Self);
-        }
-        if (front_direction = 8)
-        {
-            transform.position = Vector2(speed, 0, 0);
-            transform.position = Vector2(0, -speed, 0);
-        }
+
+}
+}
+  void OnCollisionEnter2D(){
+    collide = true;
+      Instantiate(b[Random.Range(0, 7)]);
+      if(front_direction = 1){
+        transform.position = Vector2(0,-speed,0);
+      }
+      if(front_direction = 2){
+        transform.position = Vector2(0,-speed,0);
+      }
+      if(front_direction = 3){
+        transform.position = Vector2(0,-speed,0);
+      }
+      if(front_direction = 4){
+        transform.position = Vector2(0,-speed,0);
+      }
+      if(front_direction = 5){
+        transform.position = Vector2(-speed,0,0);
+        transform.rotate(90,0,0,Space.Self);
+      }
+      if(front_direction = 6){
+        transform.position = Vector2(-speed,0,0);
+        transform.position.y = transform.prosition.y -speed;
+      }
+      if(front_direction = 7){
+          transform.position = Vector2(speed,0,0);
+          transform.rotate(-90,0,0,Space.Self);
+      }
+      if(front_direction = 8){
+        transform.position = Vector2(speed,0,0);
+        transform.position = Vector2(0,-speed,0);
+      }
 
     }
 
