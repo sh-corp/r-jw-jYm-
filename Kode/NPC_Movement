@@ -8,10 +8,10 @@ public class NPC_Movement : MonoBehaviour
     bool collide = false;
     float speed = 1;
     string[] a = {
-      "0", "1", "2", "3"
+      "0", "1", "2", "3";
     };
     string[] b = {
-      "0", "1", "2", "3", "5", "6", "7"
+      "0", "1", "2", "3", "5", "6", "7";
     };
 
     void start()
