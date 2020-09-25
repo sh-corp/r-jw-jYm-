@@ -14,7 +14,7 @@ public class NPC_Movement : MonoBehaviour
     {
 
 }
-void Fixedupdate(){
+void FixedUpdate(){
     int t = (int)Random.Range(0,4);
     if(t == 0){
       transform.Translate(new Vector2(0,speed), Space.Self);
