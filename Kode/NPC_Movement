@@ -26,48 +26,50 @@ void start(){
     if(collide == false){
       Instantiate(front_direction[Random.Range(0, front_direction.length)])
       if(front_direction = 1){
-        position.y = prosition.y +speed;
+        transform.position.y = transform.prosition.y +speed;
       }
       if(front_direction = 2){
-        position.y = prosition.y +speed;
+        transform.position.y = transform.prosition.y +speed;
       }
       if(front_direction = 3){
-        position.x = prosition.x -speed;
-        position.y = prosition.y +speed
+        transform.position.x = transform.prosition.x -speed;
+        transform.position.y = transform.prosition.y +speed;
 
       }
       if(front_direction = 4){
-        position.x = prosition.x +speed;
-        position.y = prosition.y +speed
+        transform.position.x = transform.prosition.x +speed;
+        transform.position.y = transform.prosition.y +speed;
       }
     }
     if(collide == true){
       Instantiate(back_direction[Random.Range(0, back_direction.length)])
       if(front_direction = 1){
-        position.y = prosition.y -speed;
+        transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 2){
-        position.y = prosition.y -speed;
+        transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 3){
-        position.y = prosition.y -speed;
+        transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 4){
-        position.y = prosition.y -speed;
+        transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 5){
-        position.x = prosition.x -speed;
+        transform.position.x = transform.prosition.x -speed;
+        transform.rotate(90,0,0);
       }
       if(front_direction = 6){
-        position.x = prosition.x -speed;
-        position.y = prosition.y -speed
+        transform.position.x = transform.prosition.x -speed;
+        transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 7){
-          position.x = prosition.x +speed;
+          transform.position.x = transform.prosition.x +speed;
+          transform.rotate(-90,0,0);
       }
       if(front_direction = 8){
-        position.x = prosition.x +speed;
-        position.y = prosition.y -speed
+        transform.position.x = transform.prosition.x +speed;
+        transform.position.y = transform.prosition.y -speed;
       }
     }
 
