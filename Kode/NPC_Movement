@@ -24,7 +24,7 @@ void update(){
 }
   void FixedUpdate(){
     if(collide == false){
-      Instantiate(front_direction[Random.Range(0, front_direction.length)])
+      Instantiate(front_direction[Random.Range(0, front_direction.length)]);
       if(front_direction = 1){
         transform.position.y = transform.prosition.y +speed;
       }
@@ -42,7 +42,7 @@ void update(){
       }
     }
     if(collide == true){
-      Instantiate(back_direction[Random.Range(0, back_direction.length)])
+      Instantiate(back_direction[Random.Range(0, back_direction.length)]);
       if(front_direction = 1){
         transform.position.y = transform.prosition.y -speed;
       }
