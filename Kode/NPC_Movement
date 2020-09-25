@@ -2,72 +2,89 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_Movement : MonoBehaviour{
+public class NPC_Movement : MonoBehaviour
+{
 
     bool collide = false;
     float speed = 1;
     string[] a = {
-      0, 1, 2, 3
-    }
+      "0", "1", "2", "3"
+    };
     string[] b = {
-      0, 1, 2, 3, 4, 5, 6, 7
-    }
+      "0", "1", "2", "3", "5", "6", "7"
+    };
 
-void start(){
-
-}
-void Fixedupdate(){
-  if(collide = false){
-    Instantiate(a[Random.Range(0, 3)]);
-    if(a[] = 1){
-      transform.position = Vector2(0,speed,0);
-    }
-    if(a[] = 2){
-      transform.position = Vector2(0,speed,0);
-    }
-    if(a[] = 3){
-      transform.position = Vector2(-speed,0,0);
-      transform.position = Vector2(0,speed,0);
+    void start()
+    {
 
     }
-    if(a[] = 4){
-      transform.position = Vector2(speed,0,0);
-      transform.position = Vector2(0,speed,0);
-    }
+    void Fixedupdate()
+    {
+        if (collide = false)
+        {
+            Instantiate(a[Random.Range(0, 3)]);
+            if (a["0"])
+            {
+                transform.position = Vector2(0, speed, 0);
+            }
+            if (a["1"])
+            {
+                transform.position = Vector2(0, speed, 0);
+            }
+            if (a["2"])
+            {
+                transform.position = Vector2(-speed, 0, 0);
+                transform.position = Vector2(0, speed, 0);
 
-}
-}
-  void OnCollisionEnter2D(){
-    collide = true;
-      Instantiate(b[Random.Range(0, 7)]);
-      if(b[] = 1){
-        transform.position = Vector2(0,-speed,0);
-      }
-      if(b[] = 2){
-        transform.position = Vector2(0,-speed,0);
-      }
-      if(b[] = 3){
-        transform.position = Vector2(0,-speed,0);
-      }
-      if(b[] = 4){
-        transform.position = Vector2(0,-speed,0);
-      }
-      if(b[] = 5){
-        transform.position = Vector2(-speed,0,0);
-        transform.rotate(90,0,0,Space.Self);
-      }
-      if(b[] = 6){
-        transform.position = Vector2(-speed,0,0);
-        transform.position.y = transform.prosition.y -speed;
-      }
-      if(b[] = 7){
-          transform.position = Vector2(speed,0,0);
-          transform.rotate(-90,0,0,Space.Self);
-      }
-      if(b[] = 8){
-        transform.position = Vector2(speed,0,0);
-        transform.position = Vector2(0,-speed,0);
-      }
+            }
+            if (a["3"])
+            {
+                transform.position = Vector2(speed, 0, 0);
+                transform.position = Vector2(0, speed, 0);
+            }
+
+        }
+    }
+    void OnCollisionEnter2D()
+    {
+        collide = true;
+        Instantiate(b[Random.Range(0, 7)]);
+        if (b["0"])
+        {
+            transform.position = Vector2(0, -speed, 0);
+        }
+        if (b["1"])
+        {
+            transform.position = Vector2(0, -speed, 0);
+        }
+        if (b["2"])
+        {
+            transform.position = Vector2(0, -speed, 0);
+        }
+        if (b["3"])
+        {
+            transform.position = Vector2(0, -speed, 0);
+        }
+        if (b["4"])
+        {
+            transform.position = Vector2(-speed, 0, 0);
+            transform.rotate(90, 0, 0, Space.Self);
+        }
+        if (b["5"])
+        {
+            transform.position = Vector2(-speed, 0, 0);
+            transform.position.y = transform.prosition.y - speed;
+        }
+        if (b["6"])
+        {
+            transform.position = Vector2(speed, 0, 0);
+            transform.rotate(-90, 0, 0, Space.Self);
+        }
+        if (b["7"])
+        {
+            transform.position = Vector2(speed, 0, 0);
+            transform.position = Vector2(0, -speed, 0);
+        }
 
     }
 
