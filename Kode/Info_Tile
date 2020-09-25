@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Info_Tile : MonoBehaviour{
+
+  public string;
+
+  void start(){
+  }
+
+  void OnCollisionEnter2D(Collision2D coll){
+    if(coll.collider == true){
+      text(string);
+    }
+  }
+}
