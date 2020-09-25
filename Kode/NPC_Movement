@@ -17,19 +17,19 @@ void Fixedupdate(){
   if(collide = false){
     Instantiate(front_direction[Random.Range(0, front_direction.length)]);
     if(front_direction = 1){
-      transform.position.y = transform.prosition.y +speed;
+      transform.position = Vector2(0,speed,0);
     }
     if(front_direction = 2){
-      transform.position.y = transform.prosition.y +speed;
+      transform.position = Vector2(0,speed,0);
     }
     if(front_direction = 3){
-      transform.position.x = transform.prosition.x -speed;
-      transform.position.y = transform.prosition.y +speed;
+      transform.position = Vector2(-speed,0,0);
+      transform.position = Vector2(0,speed,0);
 
     }
     if(front_direction = 4){
-      transform.position.x = transform.prosition.x +speed;
-      transform.position.y = transform.prosition.y +speed;
+      transform.position = Vector2(speed,0,0);
+      transform.position = Vector2(0,speed,0);
     }
 
 }
@@ -38,34 +38,34 @@ void Fixedupdate(){
     collide = true;
       Instantiate(back_direction[Random.Range(0, back_direction.length)]);
       if(front_direction = 1){
-        transform.position.y = transform.prosition.y -speed;
+        transform.position = Vector2(0,-speed,0);
       }
       if(front_direction = 2){
-        transform.position.y = transform.prosition.y -speed;
+        transform.position = Vector2(0,-speed,0);
       }
       if(front_direction = 3){
-        transform.position.y = transform.prosition.y -speed;
+        transform.position = Vector2(0,-speed,0);
       }
       if(front_direction = 4){
-        transform.position.y = transform.prosition.y -speed;
+        transform.position = Vector2(0,-speed,0);
       }
       if(front_direction = 5){
-        transform.position.x = transform.prosition.x -speed;
+        transform.position = Vector2(-speed,0,0);
         transform.rotate(90,0,0,Space.Self);
       }
       if(front_direction = 6){
-        transform.position.x = transform.prosition.x -speed;
+        transform.position = Vector2(-speed,0,0);
         transform.position.y = transform.prosition.y -speed;
       }
       if(front_direction = 7){
-          transform.position.x = transform.prosition.x +speed;
+          transform.position = Vector2(speed,0,0);
           transform.rotate(-90,0,0,Space.Self);
       }
       if(front_direction = 8){
-        transform.position.x = transform.prosition.x +speed;
-        transform.position.y = transform.prosition.y -speed;
+        transform.position = Vector2(speed,0,0);
+        transform.position = Vector2(0,-speed,0);
       }
-      //collide = false;
+
     }
 
 
