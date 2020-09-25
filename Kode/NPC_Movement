@@ -7,12 +7,8 @@ public class NPC_Movement : MonoBehaviour
 
     bool collide = false;
     float speed = 1;
-    string[] a = {
-      "0", "1", "2", "3";
-    };
-    string[] b = {
-      "0", "1", "2", "3", "5", "6", "7";
-    };
+
+
 
     void start()
     {
@@ -20,19 +16,19 @@ public class NPC_Movement : MonoBehaviour
 }
 void Fixedupdate(){
   if(collide = false){
-    Instantiate(a[Random.Range(0, 3)]);
-    if(a["0"]){
+    int t = (int)Random.Range(0,4);
+    if(t == 0){
       transform.position = Vector2(0,speed);
     }
-    if(a["1"]){
+    if(t == 1){
       transform.position = Vector2(0,speed);
     }
-    if(a["2"]){
+    if(t == 2){
       transform.position = Vector2(-speed,0);
       transform.position = Vector2(0,speed);
 
     }
-    if(a["3"]){
+    if(t == 3){
       transform.position = Vector2(speed,0);
       transform.position = Vector2(0,speed);
     }
@@ -41,32 +37,32 @@ void Fixedupdate(){
 }
   void OnCollisionEnter2D(){
     collide = true;
-      Instantiate(b[Random.Range(0, 7)]);
-      if(b["0"]){
+      int t = (int)Random.Range(0,8);
+      if(t == 0){
         transform.position = Vector2(0,-speed);
       }
-      if(b["1"]){
+      if(t == 1){
         transform.position = Vector2(0,-speed);
       }
-      if(b["2"]){
+      if(t == 2){
         transform.position = Vector2(0,-speed);
       }
-      if(b["3"]){
+      if(t == 3){
         transform.position = Vector2(0,-speed);
       }
-      if(b["4"]){
+      if(t == 4){
         transform.position = Vector2(-speed,0);
         transform.rotate(90,0,0,Space.Self);
       }
-      if(b["5"]){
+      if(t == 5){
         transform.position = Vector2(-speed,0);
         transform.position.y = transform.prosition.y -speed;
       }
-      if(b["6"]){
+      if(t == 6){
           transform.position = Vector2(speed,0);
           transform.rotate(-90,0,0,Space.Self);
       }
-      if(b["7"]){
+      if(t == 7){
         transform.position = Vector2(speed,0);
         transform.position = Vector2(0,-speed);
       }
