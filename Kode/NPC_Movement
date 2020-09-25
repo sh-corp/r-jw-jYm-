@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC_Movement : MonoBehaviour{
 
-    public bool collide = false;
+    bool collide = false;
     float front_direction = 4;
     float back_direction = 8;
     float speed = 1;
@@ -13,35 +13,29 @@ public class NPC_Movement : MonoBehaviour{
 void start(){
 
 }
-void update(){
-  if(OnCollisionEnter2D){
-    collide = true;
-  }
-  else{
-    collide = false;
-  }
+void Fixedupdate(){
+  if(collide = false){
+    Instantiate(front_direction[Random.Range(0, front_direction.length)]);
+    if(front_direction = 1){
+      transform.position.y = transform.prosition.y +speed;
+    }
+    if(front_direction = 2){
+      transform.position.y = transform.prosition.y +speed;
+    }
+    if(front_direction = 3){
+      transform.position.x = transform.prosition.x -speed;
+      transform.position.y = transform.prosition.y +speed;
+
+    }
+    if(front_direction = 4){
+      transform.position.x = transform.prosition.x +speed;
+      transform.position.y = transform.prosition.y +speed;
+    }
 
 }
-  void FixedUpdate(){
-    if(collide == false){
-      Instantiate(front_direction[Random.Range(0, front_direction.length)]);
-      if(front_direction = 1){
-        transform.position.y = transform.prosition.y +speed;
-      }
-      if(front_direction = 2){
-        transform.position.y = transform.prosition.y +speed;
-      }
-      if(front_direction = 3){
-        transform.position.x = transform.prosition.x -speed;
-        transform.position.y = transform.prosition.y +speed;
-
-      }
-      if(front_direction = 4){
-        transform.position.x = transform.prosition.x +speed;
-        transform.position.y = transform.prosition.y +speed;
-      }
-    }
-    if(collide == true){
+}
+  void OnCollisionEnter2D(){
+    collide = true;
       Instantiate(back_direction[Random.Range(0, back_direction.length)]);
       if(front_direction = 1){
         transform.position.y = transform.prosition.y -speed;
@@ -71,9 +65,9 @@ void update(){
         transform.position.x = transform.prosition.x +speed;
         transform.position.y = transform.prosition.y -speed;
       }
+      //collide = false;
     }
 
-  }
 
-}
+
 }
