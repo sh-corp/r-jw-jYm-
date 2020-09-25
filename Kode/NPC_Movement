@@ -57,7 +57,7 @@ void start(){
       }
       if(front_direction = 5){
         transform.position.x = transform.prosition.x -speed;
-        transform.rotate(90,0,0);
+        transform.rotate(90,0,0,Space.Self);
       }
       if(front_direction = 6){
         transform.position.x = transform.prosition.x -speed;
@@ -65,7 +65,7 @@ void start(){
       }
       if(front_direction = 7){
           transform.position.x = transform.prosition.x +speed;
-          transform.rotate(-90,0,0);
+          transform.rotate(-90,0,0,Space.Self);
       }
       if(front_direction = 8){
         transform.position.x = transform.prosition.x +speed;
